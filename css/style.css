@@ -66,8 +66,14 @@ header{
 
 .boutons-menu a:hover{
     color: blue;
-    border-top: 1px solid blue;
-    padding-top: 15px;
+    border-top: 2px solid blue;
+    padding-top: 14px;
+}
+
+main{
+    display: flex;
+    gap: 35px;
+    flex-direction: column;
 }
 
 .main-container {
@@ -75,6 +81,9 @@ header{
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
 }
 
 a {
@@ -245,15 +254,13 @@ a {
 .hebergements {
     width: 65%;
     display: flex;
+    flex: 1 0 0;
     flex-direction: column;
     align-items: flex-start;
     gap: 30px;
-    flex: 1 0 0;
-    align-self: stretch;
 }
 
 .hebergements h2{
-    align-self: stretch;
     font-size: 22px;
 }
 
@@ -266,22 +273,25 @@ a {
 
 .carte{
     display: flex;
-    padding-bottom: 0px;
+    height: 192px;
+    width: 250px;
     flex-direction: column;
     align-items: center;
-    gap: 4px;
-    flex: 1 0 0;
+    flex-direction: column;
     border-radius: 20px;
     background: #FFF;
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+    padding-bottom: 15px;
+    gap: 4px;
 }
 
 .carte img{
-    height: 124px;
-    align-self: stretch;
+    max-height: 50%;
+    max-width: 100%;
+    align-self:stretch ;
     border-radius: 20px 20px 0px 0px;
-    border: 5px solid var(--White, #FFF);
-    background: lightgray 50% / cover no-repeat;
+    border: 5px solid #FFF;
+    object-fit: cover;
 }
 
 .carte-infos{
@@ -357,7 +367,7 @@ a {
 }
 
 .activites h2{
-    height: 30.019px;
+    height: 30px;
     align-self: stretch;
 }
 
@@ -381,10 +391,10 @@ a {
 
 .carte-activites img{
     height: 380px;
-    flex-shrink: 0;
+    width: 297px;
     align-self: stretch;
     border-radius: 20px 20px 0px 0px;
-    background: lightgray 50% / cover no-repeat;
+    object-fit: cover;
 }
 
 .contenu-activites{
